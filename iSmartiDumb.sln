@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iSmartiDumb", "iSmartiDumb\iSmartiDumb.csproj", "{039A4FA5-B225-44F9-84B7-47A004A92D19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{039A4FA5-B225-44F9-84B7-47A004A92D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{039A4FA5-B225-44F9-84B7-47A004A92D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{039A4FA5-B225-44F9-84B7-47A004A92D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{039A4FA5-B225-44F9-84B7-47A004A92D19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B919A40F-9907-40B8-9ED4-BC3061957471}
+	EndGlobalSection
+EndGlobal
