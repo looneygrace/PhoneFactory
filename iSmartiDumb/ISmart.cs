@@ -8,5 +8,28 @@ namespace iSmartiDumb
 {
     interface ISmart
     {
+        string getName();
+    }
+    class Lumia : ISmart
+    {
+        string ISmart.getName()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    class GalaxyS2 : ISmart
+    {
+        string ISmart.getName()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    class Titan : ISmart
+    {
+        string ISmart.getName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
