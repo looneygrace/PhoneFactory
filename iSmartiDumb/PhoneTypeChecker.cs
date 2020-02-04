@@ -10,39 +10,39 @@ namespace iSmartiDumb
     {
         IPhoneFactory factory;
         Manufacturers manu;
-        PhoneTypeChecker(Manufacturers m)
+        public PhoneTypeChecker(Manufacturers m)
         {
-            if(m == Manufacturers.NOKIA)
-            {
-                IPhoneFactory f = new NokiaFactory();
-                IDumb asha = f.GetDumb();
-                ISmart lumia = f.GetSmart();
-                Console.WriteLine("Smart: " + lumia.getName());
-                Console.WriteLine("Dumb: " + asha.getName());
-            }
-            else if (m == Manufacturers.HTC)
-            {
-                IPhoneFactory f = new HTCFactory();
-                IDumb dumb = f.GetDumb();
-                ISmart smart = f.GetSmart();
-                Console.WriteLine("Smart: " + smart.getName());
-                Console.WriteLine("Dumb: " + dumb.getName());
-            }
-            else if (m == Manufacturers.SAMSUNG)
-            {
-                IPhoneFactory f = new SamsungFactory();
-                IDumb dumb = f.GetDumb();
-                ISmart smart = f.GetSmart();
-                Console.WriteLine("Smart: " + smart.getName());
-                Console.WriteLine("Dumb: " + dumb.getName());
-            }
-
+            manu = m;
 
 
         }
-        void CheckProducts()
+        public void CheckProducts()
         {
-
+            
+            if (manu == Manufacturers.NOKIA)
+            {
+                factory = new NokiaFactory();
+                IDumb asha = factory.GetDumb();
+                ISmart lumia = factory.GetSmart();
+                Console.WriteLine("Smart: " + lumia.getName());
+                Console.WriteLine("Dumb: " + asha.getName());
+            }
+            else if (manu == Manufacturers.HTC)
+            {
+                factory = new HTCFactory();
+                IDumb dumb = factory.GetDumb();
+                ISmart smart = factory.GetSmart();
+                Console.WriteLine("Smart: " + smart.getName());
+                Console.WriteLine("Dumb: " + dumb.getName());
+            }
+            else if (manu == Manufacturers.SAMSUNG)
+            {
+                factory = new SamsungFactory();
+                IDumb dumb = factory.GetDumb();
+                ISmart smart = factory.GetSmart();
+                Console.WriteLine("Smart: " + smart.getName());
+                Console.WriteLine("Dumb: " + dumb.getName());
+            }
         }
 
     }
