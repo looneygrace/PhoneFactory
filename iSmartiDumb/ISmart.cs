@@ -14,14 +14,14 @@ namespace iSmartiDumb
     {
         string ISmart.getName()
         {
-            throw new NotImplementedException();
+            return "Lumia";
         }
     }
     class GalaxyS2 : ISmart
     {
         string ISmart.getName()
         {
-            throw new NotImplementedException();
+            return "GalaxyS2";
         }
     }
 
@@ -29,7 +29,7 @@ namespace iSmartiDumb
     {
         string ISmart.getName()
         {
-            throw new NotImplementedException();
+            return "Titan";
         }
     }
 }

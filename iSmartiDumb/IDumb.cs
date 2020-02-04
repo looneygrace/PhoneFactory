@@ -14,21 +14,21 @@ namespace iSmartiDumb
     {
         string IDumb.getName()
         {
-            throw new NotImplementedException();
+            return "Asha";
         }
     }
     class Genie : IDumb
     {
         string IDumb.getName()
         {
-            throw new NotImplementedException();
+            return "Genie";
         }
     }
     class Primo : IDumb
     {
         string IDumb.getName()
         {
-            throw new NotImplementedException();
+            return "Primo";
         }
     }
 }

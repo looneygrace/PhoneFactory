@@ -15,36 +15,39 @@ namespace iSmartiDumb
     {
         IDumb IPhoneFactory.GetDumb()
         {
-            throw new NotImplementedException();
+
+            return new Genie();
         }
 
         ISmart IPhoneFactory.GetSmart()
         {
-            throw new NotImplementedException();
+            return new GalaxyS2();
         }
     }
     class HTCFactory : IPhoneFactory
     {
         IDumb IPhoneFactory.GetDumb()
         {
-            throw new NotImplementedException();
+            return new Primo();
         }
 
         ISmart IPhoneFactory.GetSmart()
         {
-            throw new NotImplementedException();
+            return new Titan();
         }
     }
     class NokiaFactory : IPhoneFactory
     {
         IDumb IPhoneFactory.GetDumb()
         {
-            throw new NotImplementedException();
+            Asha asha = new Asha();
+            return asha;
         }
 
         ISmart IPhoneFactory.GetSmart()
         {
-            throw new NotImplementedException();
+            Lumia lumia = new Lumia();
+            return lumia;
         }
     }
 }
